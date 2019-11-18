@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Detail</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" href="loginadmin.css">
+</head>
+
+<body>
+  <div class="logo">
+    <img src="lg.png" alt="" srcset="">
+  </div>
+<form name="myForm" action="dashboard.html" onsubmit="return validateForm()" method="post">
+   <!-- <form action="dashboard.html"> -->
+    <div class="container">
+      
+      <hr>
+      <label><b>Judul</b></label>
+      <input type="text" placeholder="Masukkan Judul" name="judul" required>
+      <br>
+      <label><b>Subjek</b></label>
+      <input type="text" placeholder="Masukkan subjek" name="subjek" required>
+      <br>
+      <label><b>Pilih File</b></label>
+      <input type="file" placeholder="Pilih File" name="file" required>
+      <br>
+      <button type="submit" class="registerbtn">Upload</button>
+      <hr>
+    
+      </div>
+    </div>
+
+  </form>
+ <script>
+function validateForm() {
+  var x = document.forms["myForm"]["psw"].value;
+  var y = document.forms["myForm"]["email"].value;
+  if (x == "") {
+    alert("Password harus diisi");
+    return false;   
+  } else if (y == "") {
+    alert("Email harus diisi");
+    return false;
+  }
+}
+
+function myFunction() {
+  var txt;
+  if (confirm("Yakin mau Daftar ??")) {
+    src = "detail.html"
+  } else {
+    txt = "tidak yakin" ;
+  }
+}
+
+
+</script>
+</body>
+
+</html>
