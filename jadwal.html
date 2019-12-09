@@ -37,37 +37,37 @@
 
     <div class="cardjadwal1">
       <div class="headerjadwal">
-        <h1>Senin</h1>
+       <!--  <h1>Senin</h1> -->
       </div>
       <div class="containerjadwal">
-        <h2>Pemograman Berbasis Website</h2>
+        <!-- <h2>Pemograman Berbasis Website</h2>
         <p class="sub-title">08.00 - 10.40</p>
         <p class="sub-time">R.Aula 1A Fakultas Ilmu Komputer</p>
-        <p class="sub-place">Dosen Diksy Media F. S.Kom., M.Kom</p>
+        <p class="sub-place">Dosen Diksy Media F. S.Kom., M.Kom</p> -->
       </div>
     </div>
 
     <div class="cardjadwal">
       <div class="headerjadwal">
-        <h1>Senin</h1>
+       <!--  <h1>Senin</h1> -->
       </div>
       <div class="containerjadwal">
-        <h2>Pemograman Berbasis Website</h2>
+       <!--  <h2>Pemograman Berbasis Website</h2>
         <p class="sub-title">08.00 - 10.40</p>
         <p class="sub-time">R.Aula 1A Fakultas Ilmu Komputer</p>
-        <p class="sub-place">Dosen Diksy Media F. S.Kom., M.Kom</p>
+        <p class="sub-place">Dosen Diksy Media F. S.Kom., M.Kom</p> -->
       </div>
     </div>
 
     <div class="cardjadwal">
       <div class="headerjadwal">
-        <h1>Senin</h1>
+        <!-- <h1>Senin</h1> -->
       </div>
       <div class="containerjadwal">
-        <h2>Pemograman Berbasis Website</h2>
+        <!-- <h2>Pemograman Berbasis Website</h2>
         <p class="sub-title">08.00 - 10.40</p>
         <p class="sub-time">R.Aula 1A Fakultas Ilmu Komputer</p>
-        <p class="sub-place">Dosen Diksy Media F. S.Kom., M.Kom</p>
+        <p class="sub-place">Dosen Diksy Media F. S.Kom., M.Kom</p> -->
       </div>
     </div>
 
@@ -78,19 +78,18 @@
 </body>
 </html>
    
-<script type="json/javascript" src="jquery-3.3.1.min.js"></script>
-<script type="json/javascript">
+<script type="/json/javascript" src="jquery-3.3.1.min.js"></script>
+<script type="/json/javascript">
     $(document).ready(function () {
         $.getJSON('https://raw.githubusercontent.com/SiskaImandaa/siskaimandaa.github.io/master/json/data.json',
             function (data) {
                 // console.log(data);
                 $.each(data, function (n, response) {
-                    $('.cards').append(
-                        `<div class="card">
-                        <div class="card-title bg-green">
+                    $('.card').append(
+                        `<div class="card-title bg-green">
                             <h1>`+response['hari']+`</h1>
                         </div>
-                        <p class="sub-title">`+response['matkul']+`</p>
+                        <h2>`+response['matkul']+`</h2>
                         <p class="sub-time">`+response['jam']+`</p>
                         <p class="sub-place">`+response['ruang']+`</p>
                         <p class="teacher">Teacher</p>
