@@ -9,7 +9,7 @@
 },
 
 {
-	"hari"	:"Senin",
+	"hari"	:"selasa",
 	"matkul" : "Laravel",
 	"jam"	:"07.00 - 08.40",
 	"ruang":"Ruang 3 Fakultas Ilmu Komputer",
@@ -17,7 +17,7 @@
 },
 
 {
-	"hari"	:"Senin",
+	"hari"	:"rabu",
 	"matkul" : "Laravel",
 	"jam"	:"07.00 - 08.40",
 	"ruang":"Ruang 3 Fakultas Ilmu Komputer",
