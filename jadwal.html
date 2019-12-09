@@ -32,7 +32,10 @@
                 <h2>Jadwal</h2>
             </div>
         </div>
-        
+       
+     <section class="cards">
+
+             
 <div class="card">
 
     <div class="cardjadwal1">
@@ -72,7 +75,7 @@
     </div>
 
 </div>
-
+</section>
     <br><br><br><br><br><br>
     <img class="img3" src="baca.png" alt="">
 </body>
@@ -85,7 +88,7 @@
             function (data) {
                 // console.log(data);
                 $.each(data, function (n, response) {
-                    $('.card').append(
+                    $('.cards').append(
                         `<div class="card-title bg-green">
                             <h1>`+response['hari']+`</h1>
                         </div>
