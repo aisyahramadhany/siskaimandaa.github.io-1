@@ -1,0 +1,26 @@
+[
+
+{
+	"hari"	:"Senin",
+	"matkul" : "Laravel",
+	"jam"	:"07.00 - 08.40",
+	"ruang":"Ruang 3 Fakultas Ilmu Komputer",
+	"dosen":"Diksy Media F, S.Kom., M.Kom"
+},
+
+{
+	"hari"	:"Senin",
+	"matkul" : "Laravel",
+	"jam"	:"07.00 - 08.40",
+	"ruang":"Ruang 3 Fakultas Ilmu Komputer",
+	"dosen":"Diksy Media F, S.Kom., M.Kom"
+},
+
+{
+	"hari"	:"Senin",
+	"matkul" : "Laravel",
+	"jam"	:"07.00 - 08.40",
+	"ruang":"Ruang 3 Fakultas Ilmu Komputer",
+	"dosen":"Diksy Media F, S.Kom., M.Kom"
+}
+]
