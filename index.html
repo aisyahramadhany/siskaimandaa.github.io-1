@@ -11,7 +11,7 @@
     <img src="lg.png" alt="" srcset="">
   </div>
 
-   <form action="dashboard.html">
+   <form name="login-form" action="user/dashboard.html" onsubmit="return validasi()" method="post">
     <div class="container">
       <img id="welcome" src="welcome.png" alt="" srcset="">
       <hr>
@@ -30,3 +30,24 @@
 </body>
 
 </html>
+
+<script>
+        function validasi() {
+  var x = document.forms["login-form"]["email"].value;
+  var y = document.forms["login-form"]["psw"].value;
+  if (x == "" && y == "") {
+    alert("Username dan Password Kosong");
+  }else if (x == ""){
+    alert("Email tidak Boleh Kosong");
+  }else if (y == ""){
+    alert("Password tidak Boleh Kosong")
+  }else if (x == "admin"){
+    // alert("periksa password dan email")
+    location.replace("dashboard.html");
+  }
+  else{
+      return true;
+  }
+  return false;
+}
+    </script>
